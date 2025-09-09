@@ -1,0 +1,28 @@
+[ 2025-09-09 13:13:32,485 ] 28 root - INFO - Entered the data ingestion method or component
+[ 2025-09-09 13:13:32,490 ] 34 root - INFO - Read the dataset as dataframe
+[ 2025-09-09 13:13:32,496 ] 40 root - INFO - Train test split initiated
+[ 2025-09-09 13:13:32,503 ] 47 root - INFO - Inmgestion of the data iss completed
+[ 2025-09-09 13:13:32,503 ] 68 root - INFO - Data Transformation initiated
+[ 2025-09-09 13:13:32,551 ] 71 root - INFO - Read train and test data completed
+[ 2025-09-09 13:13:32,551 ] 73 root - INFO - Obtaining preprocessing object
+[ 2025-09-09 13:13:32,552 ] 41 root - INFO - Numerical columns Scaling is  compleded! 
+[ 2025-09-09 13:13:32,554 ] 48 root - INFO - Categorical columns encoding compleded! 
+[ 2025-09-09 13:13:32,554 ] 59 root - INFO - Data preprocessing is completed! 
+[ 2025-09-09 13:13:32,556 ] 89 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[ 2025-09-09 13:13:32,580 ] 105 root - INFO - Saving Preprocessing object.
+[ 2025-09-09 13:13:32,583 ] 45 root - INFO - Splitting training and test input data
+[ 2025-09-09 13:13:32,584 ] 35 root - INFO - Training Linear Regression model
+[ 2025-09-09 13:13:32,587 ] 46 root - INFO - Model Linear Regression Training is done!
+[ 2025-09-09 13:13:32,587 ] 35 root - INFO - Training Random Forest model
+[ 2025-09-09 13:13:32,999 ] 46 root - INFO - Model Random Forest Training is done!
+[ 2025-09-09 13:13:32,999 ] 35 root - INFO - Training Decision Tree model
+[ 2025-09-09 13:13:33,005 ] 46 root - INFO - Model Decision Tree Training is done!
+[ 2025-09-09 13:13:33,005 ] 35 root - INFO - Training Gradient Boosting model
+[ 2025-09-09 13:13:33,183 ] 46 root - INFO - Model Gradient Boosting Training is done!
+[ 2025-09-09 13:13:33,183 ] 35 root - INFO - Training XGBoost model
+[ 2025-09-09 13:13:33,324 ] 46 root - INFO - Model XGBoost Training is done!
+[ 2025-09-09 13:13:33,324 ] 35 root - INFO - Training CatBoost model
+[ 2025-09-09 13:13:35,696 ] 46 root - INFO - Model CatBoost Training is done!
+[ 2025-09-09 13:13:35,697 ] 35 root - INFO - Training AdaBoostRegressor model
+[ 2025-09-09 13:13:35,838 ] 46 root - INFO - Model AdaBoostRegressor Training is done!
+[ 2025-09-09 13:13:35,838 ] 76 root - INFO - Bset model found on both training and testing dataset
