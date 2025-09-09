@@ -1,0 +1,7 @@
+[ 2025-09-09 17:02:54,995 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-09-09 17:02:55,000 ] 97 werkzeug - INFO -  * Debugger PIN: 389-873-740
+[ 2025-09-09 17:02:55,235 ] 67 root - INFO - Dataframe gathered for new data!
+[ 2025-09-09 17:02:55,499 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 17:02:55] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 17:03:21,407 ] 67 root - INFO - Dataframe gathered for new data!
+[ 2025-09-09 17:03:21,431 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 17:03:21] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 17:03:45,061 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\hp\\Desktop\\DS\\project_structure\\project_1\\src\\pipeline\\predict_pipeline.py', reloading
