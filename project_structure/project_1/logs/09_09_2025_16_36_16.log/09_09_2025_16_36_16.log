@@ -1,0 +1,43 @@
+[ 2025-09-09 16:36:17,964 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.123.193.3:5000
+[ 2025-09-09 16:36:17,965 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2025-09-09 16:36:36,517 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:36:36] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 16:36:37,924 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:36:37] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 16:36:38,307 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:36:38] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 16:36:55,609 ] 63 root - INFO - Dataframe gathered for new data!
+[ 2025-09-09 16:36:55,876 ] 875 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\DS\project_structure\project_1\src\pipeline\predict_pipeline.py", line 23, in predict
+    data_array = preprocessor.transform(data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\DS\.venv\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\DS\.venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'parental level of education', 'race/ethnicity', 'writing score', 'reading score', 'test preparation course'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\DS\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\DS\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\DS\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\DS\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\DS\project_structure\project_1\app.py", line 34, in predict_datapoint
+    results = predict_pipeline.predict(pred_df)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\DS\project_structure\project_1\src\pipeline\predict_pipeline.py", line 29, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\hp\Desktop\DS\project_structure\project_1\src\pipeline\predict_pipeline.py] line number [23] error message[columns are missing: {'parental level of education', 'race/ethnicity', 'writing score', 'reading score', 'test preparation course'}]
+[ 2025-09-09 16:36:55,883 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:36:55] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -

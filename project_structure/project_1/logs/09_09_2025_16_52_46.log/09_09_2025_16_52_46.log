@@ -1,0 +1,14 @@
+[ 2025-09-09 16:52:46,448 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-09-09 16:52:46,454 ] 97 werkzeug - INFO -  * Debugger PIN: 389-873-740
+[ 2025-09-09 16:52:50,044 ] 67 root - INFO - Dataframe gathered for new data!
+[ 2025-09-09 16:52:50,355 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:50] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2025-09-09 16:52:50,444 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:50] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-09-09 16:52:50,444 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:50] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-09-09 16:52:50,462 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:50] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=4zIuPnq5LsJVUiI6oFZb HTTP/1.1" 200 -
+[ 2025-09-09 16:52:50,482 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:50] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2025-09-09 16:52:56,918 ] 67 root - INFO - Dataframe gathered for new data!
+[ 2025-09-09 16:52:56,946 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:56] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2025-09-09 16:52:56,959 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:56] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-09-09 16:52:56,962 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:56] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-09-09 16:52:56,983 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:52:56] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=4zIuPnq5LsJVUiI6oFZb HTTP/1.1[0m" 304 -
+[ 2025-09-09 16:53:44,049 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\hp\\Desktop\\DS\\project_structure\\project_1\\src\\pipeline\\predict_pipeline.py', reloading

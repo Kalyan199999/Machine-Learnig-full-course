@@ -1,0 +1,7 @@
+[ 2025-09-09 16:48:34,970 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-09-09 16:48:34,975 ] 97 werkzeug - INFO -  * Debugger PIN: 389-873-740
+[ 2025-09-09 16:48:35,202 ] 64 root - INFO - Dataframe gathered for new data!
+[ 2025-09-09 16:48:35,207 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:48:35] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 16:48:38,250 ] 64 root - INFO - Dataframe gathered for new data!
+[ 2025-09-09 16:48:38,252 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 16:48:38] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 16:48:44,133 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\hp\\Desktop\\DS\\project_structure\\project_1\\app.py', reloading
