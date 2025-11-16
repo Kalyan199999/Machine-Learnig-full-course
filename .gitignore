@@ -1,25 +1,30 @@
-/.ipynb_checkpoints
-/assignments/.ipynb_checkpoints
-/python_basics/.ipynb_checkpoints
-/modules/.ipynb_checkpoints
-/modules/numpy/.ipynb_checkpoints
+# /assignments/.ipynb_checkpoints
+# /python_basics/.ipynb_checkpoints
+# /modules/.ipynb_checkpoints
+# /modules/numpy/.ipynb_checkpoints
 
-/All_data_sets/.ipynb_checkpoints
-/All_data_sets/dl/.ipynb_checkpoints
+# /All_data_sets/.ipynb_checkpoints
+# /All_data_sets/dl/.ipynb_checkpoints
 
-/project_structure/project_1/.ipynb_checkpoints
-/project_structure/project_1/venv
-/project_structure/project_1/my_first_project.egg-info
-/project_structure/project_1/src/logs
-/project_structure/project_1/notebook/.ipynb_checkpoints
-/project_structure/project_1/notebook/catboost_info
-/nlp/.ipynb_checkpoints
+# /project_structure/project_1/.ipynb_checkpoints
+# /project_structure/project_1/venv
+# /project_structure/project_1/my_first_project.egg-info
+# /project_structure/project_1/src/logs
+# /project_structure/project_1/notebook/.ipynb_checkpoints
+# /project_structure/project_1/notebook/catboost_info
+# /nlp/.ipynb_checkpoints
 
-/deep_learning/.ipynb_checkpoints
-/deep_learning/ann/.ipynb_checkpoints
-/open_cv/.ipynb_checkpoints
-/practice/.ipynb_checkpoints
+# /deep_learning/.ipynb_checkpoints
+# /deep_learning/ann/.ipynb_checkpoints
+# /open_cv/.ipynb_checkpoints
+# /practice/.ipynb_checkpoints
+# /All_data_sets
+# /myflask/.ipynb_checkpoints
+# /myflask/myflask\__pycache__
+# /practice/bbc_news_classification/.ipynb_checkpoints
+
+*.ipynb_checkpoints*
+# *.csv
+# *.xlsx
 /All_data_sets
-/myflask/.ipynb_checkpoints
-/myflask/myflask\__pycache__
-/practice/bbc_news_classification/.ipynb_checkpoints
+/project_structure
