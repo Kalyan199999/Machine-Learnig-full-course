@@ -28,3 +28,6 @@
 # *.xlsx
 /All_data_sets
 /project_structure
+/.vscode
+*.log
+*__pycache__
