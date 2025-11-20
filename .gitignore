@@ -31,3 +31,4 @@
 /.vscode
 *.log
 *__pycache__
+myvenv
