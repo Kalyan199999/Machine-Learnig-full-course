@@ -9,3 +9,6 @@ print("hello\tAkhil")
 print("Hello\bKalyan")
 
 print("Kalyan is a 'Software' guy")
+
+# printing multiple times
+print(5*"kalyan\t")
