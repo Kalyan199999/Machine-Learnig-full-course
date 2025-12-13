@@ -1,0 +1,198 @@
+Q1: What is Machine Learning?
+
+Answer:
+Machine Learning (ML) is a branch of AI that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed for the task.
+
+Example: Spam email detection, house price prediction.
+
+Key idea: Instead of writing rules, we give data and let the system learn patterns.
+
+
+Q2: What is a Machine Learning Model?
+
+Answer:
+A model is the mathematical representation of learned patterns from data. It can take inputs and produce predictions.
+
+Represented as 𝑓(𝑥;𝜃) where:
+    x = input features
+    θ = parameters learned during training
+    f(x;θ) = output prediction
+Example: Linear regression model → y=wx+b, where w and b are learned.
+
+Q3: Difference between Algorithm and Model?
+
+Answer:
+| Term      | Explanation                                                                           |
+| --------- | ------------------------------------------------------------------------------------- |
+| Algorithm | Step-by-step procedure used to train a model (e.g., Linear Regression, Random Forest) |
+| Model     | The trained version of the algorithm with learned parameters                          |
+
+Example:
+Algorithm: Random Forest
+Model: Trained forest that predicts new data
+
+
+Q4: Types of Machine Learning
+
+Answer:
+
+Supervised Learning -> Learns from labeled data (input-output pairs)
+
+Example: Predict house prices, email spam detection
+
+Unsupervised Learning -> Learns patterns from unlabeled data
+
+Example: Customer segmentation, anomaly detection
+
+Reinforcement Learning -> Learns by interacting with an environment and receiving rewards
+
+Example: Game AI, self-driving cars
+
+
+Q5: Examples of Supervised vs Unsupervised
+
+Answer:
+| Type          | Example                                    |
+| ------------- | ------------------------------------------ |
+| Supervised    | Predict student grades from hours studied  |
+| Unsupervised  | Group customers based on shopping behavior |
+| Reinforcement | Training a robot to walk using rewards     |
+
+
+Q6: Steps in Machine Learning Workflow
+
+Answer:
+Data Collection – Gather raw data
+Data Preprocessing – Clean, handle missing values, encode, scale
+Feature Engineering – Create meaningful input features
+Train-Test Split – Separate data to train and evaluate the model
+Model Selection & Training – Choose algorithm and train
+Evaluation – Use metrics to check performance
+Hyperparameter Tuning – Optimize model parameters
+Deployment & Monitoring – Put model in production and track performance
+
+
+Q7: What is Data Preprocessing? Why is it important?
+
+Answer:
+Data Preprocessing is the process of cleaning, transforming, and organizing raw data before feeding it into a machine learning model.
+
+Importance:
+Real-world data is often noisy, incomplete, or inconsistent.
+Preprocessing improves model accuracy and convergence.
+Prevents problems like overfitting, bias, or poor generalization.
+
+Key Steps:
+Handling missing values
+Encoding categorical variables
+Scaling / normalization
+Outlier detection & handling
+Feature selection & feature engineering
+
+
+Q8: How do you handle missing data?
+
+Answer:
+
+Methods:
+Delete rows – if missing values are few
+Mean / Median / Mode Imputation – numeric or categorical
+KNN Imputation – predict missing values using nearest neighbors
+Regression-based Imputation – predict missing values from other features
+“Missing” category – for categorical variables with many missing values
+
+Example:
+Age column has missing values → replace with median age
+
+
+Q9: How do you handle categorical data in ML?
+
+Answer:
+Techniques:
+
+Label Encoding – converts categories into integers (ordinal)
+
+One-Hot Encoding – creates binary columns (nominal)
+
+Target Encoding – replaces category with mean of target variable
+
+Binary Encoding / Embeddings – reduces dimensions for high-cardinality features
+
+Q10: How do you handle categorical data in ML?
+
+Answer:
+
+Techniques:
+Label Encoding – converts categories into integers (ordinal)
+One-Hot Encoding – creates binary columns (nominal)
+Target Encoding – replaces category with mean of target variable
+Binary Encoding / Embeddings – reduces dimensions for high-cardinality features
+
+
+Q11: Why do we scale or normalize features?
+
+Answer:
+Scaling ensures features are on the same scale, which is important for distance-based algorithms (KNN, K-means, SVM) and 
+gradient-based optimization (Neural Networks).
+
+Methods:
+Min-Max Scaling → scales to [0,1]
+Standardization → mean = 0, std = 1
+Robust Scaling → median and IQR, robust to outliers
+
+
+Q12: What is an outlier? How do you handle them?
+
+Answer:
+Outlier: Data points significantly different from other observations.
+
+Detection Methods:
+Z-score (abs(z) > 3)
+IQR method (Q1 - 1.5IQR, Q3 + 1.5IQR)
+Boxplot visualization
+Isolation Forest or DBSCAN
+
+Handling Outliers:
+Remove
+Cap / Winsorize
+Log transformation
+Use robust scaling
+
+
+Q13: What is multicollinearity and how to detect it?
+
+Answer:
+Multicollinearity: When independent features are highly correlated.
+
+Detection:
+Correlation matrix (heatmap)
+Variance Inflation Factor (VIF > 5 → high correlation)
+
+Fix:
+Remove correlated features
+Combine features
+Apply PCA
+Use regularization (L2 reduces multicollinearity)
+
+
+Q14: What is train-test split and why is it important?
+
+Answer:
+Split dataset into train and test sets.
+Train set → model learns patterns
+Test set → evaluate performance on unseen data
+
+Common Split: 70% train, 30% test or 80-20.
+Importance: Prevents overfitting and ensures generalization.
+
+Q15: What is cross-validation?
+
+Answer:
+Technique to assess model performance reliably.
+Common types: k-fold CV, Stratified k-fold CV
+Helps in hyperparameter tuning and reduces variance compared to a single train-test split
+
+Example:
+5-fold CV → dataset divided into 5 parts, each part is used once as test set
+
+
