@@ -195,4 +195,75 @@ Helps in hyperparameter tuning and reduces variance compared to a single train-t
 Example:
 5-fold CV → dataset divided into 5 parts, each part is used once as test set
 
+Q16.what is Feature Engineering Workflow
+Answer:
+    Feature engineering involves creating, transforming, and selecting features to improve model learning. I usually start by understanding domain relationships, creating interaction features, handling skewness, encoding categorical variables, scaling numerical features, and finally selecting the most informative features using correlation, mutual information, or regularization.
+
+steps:
+   Raw Data
+      ↓
+   Data Cleaning
+      ↓
+   Feature Creation
+      ↓
+   Feature Transformation(Scaling)
+      ↓
+   Feature Selection
+
+Types:
+    1.Feature Creation
+    2.Feature Transformation
+    3.Encoding Categorical Features
+    4.Feature Selection
+    5.Handling Multicollinearity (Feature Engineering Perspective)
+    
+
+Note:
+ML Pipeline:
+   Raw Data
+      ↓
+   Preprocessing (clean, encode, scale)
+      ↓
+   Feature Engineering (create, combine, select)
+      ↓
+   Feature Selection (select a subset of features)
+      ↓
+   Model Training
+
+Q17.Can preprocessing leak information?
+    Yes, preprocessing can cause data leakage if transformations like scaling, imputation, or feature selection are fitted on the entire dataset before train-test split. To prevent this, preprocessing steps must be fitted only on training data or implemented using pipelines.
+
+    Preprocessing on the entire dataset before train–test split.This allows the model to indirectly “see” test data statistics.
+    1.Leakage via Scaling
+    2.Leakage via Missing Value Imputation
+    3.Leakage via Feature Selection
+    4.Leakage via Encoding
+
+Q18.Difference between feature engineering and feature selection?
+
+Answer:
+| Aspect                  | Feature Engineering                                                              | Feature Selection                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------
+| **Definition**          | Creating new features or transforming existing ones to improve model performance | Selecting the most relevant subset of features
+                                                                                                                    from the existing dataset 
+
+| **Goal**                | Add more information to help the model learn                                     | Reduce dimensionality and remove 
+                                                                                                                irrelevant/redundant features.  
+
+| **When done**           | Usually **after preprocessing**, before modeling                                 | Can be **after feature engineering** or 
+                                                                                                                        preprocessing 
+
+| **Domain Knowledge**    | High — often needs business/domain insight                                       | Medium — can be statistical, model-based, or 
+                                                                                                                automatic   
+
+| **Techniques**          | Interaction terms, ratios, polynomial features, binning, aggregation, encoding   | Correlation threshold, VIF, mutual information, 
+                                                                                                                Recursive Feature Elimination (RFE), L1 
+                                                                                                                regularization 
+
+| **Effect on model**     | Improves learning by giving more meaningful features                             | Improves generalization, reduces overfitting, 
+                                                                                                                reduces training time
+
+| **Creativity Required** | High                                                                             | Moderate                                         
+
+
 
